@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://p.trellocdn.com/power-up.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/settings.css">
+  </head>
+  <body>
+    <fieldset>
+      <legend data-i18n-id="preferred-units">Preferred Units:</legend>
+      <div class="radios">
+        <div class="radio-option">
+          <input id="metric" type="radio" name="units" value="metric">
+          <label for="metric" data-i18n-id="metric">Metric</label>
+        </div>
+        <div class="radio-option">
+          <input id="imperial" type="radio" name="units" value="imperial">
+          <label for="imperial" data-i18n-id="imperial">Imperial</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend data-i18n-id="display-preferences">Display Preferences:</legend>
+      <div>
+        <div class="opts-group">
+          <p data-i18n-id="temperature">Temperature</p>
+          <input id="temp-front" type="checkbox" value="temp-front" checked>
+          <label for="temp-front" data-i18n-id="front">Front</label>
+          <input id="temp-back" type="checkbox" value="temp-back" checked>
+          <label for="temp-back" data-i18n-id="back">Back</label>
+        </div>
+        <div class="opts-group">
+          <p data-i18n-id="wind-speed">Wind Speed</p>
+          <input id="wind-front" type="checkbox" value="wind-front" checked>
+          <label for="wind-front" data-i18n-id="front">Front</label>
+          <input id="wind-back" type="checkbox" value="wind-back" checked>
+          <label for="wind-back" data-i18n-id="back">Back</label>
+        </div>
+        <div class="opts-group">
+          <p data-i18n-id="conditions">Conditions</p>
+          <input id="conditions-front" type="checkbox" value="conditions-front" checked>
+          <label for="conditions-front" data-i18n-id="front">Front</label>
+          <input id="conditions-back" type="checkbox" value="conditions-back" checked>
+          <label for="conditions-back" data-i18n-id="back">Back</label>
+        </div>
+      </div>
+    </fieldset>
+    <script src="https://p.trellocdn.com/power-up.min.js" crossorigin="anonymous"></script>
+    <script src="../js/settings.js"></script>
+  </body>
+</html>
